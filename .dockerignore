@@ -1,0 +1,5 @@
+helloworld_k8s.sh
+Dockerfile
+.dockerignore
+helloworld/
+README.md
