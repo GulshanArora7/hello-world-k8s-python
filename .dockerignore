@@ -3,3 +3,4 @@ Dockerfile
 .dockerignore
 helloworld-python/
 README.md
+cleanup_helloworld.sh

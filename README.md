@@ -23,7 +23,7 @@
 - > Get Current Context using below command
     - `kubectl config get-contexts`
 
-`Example Output:`
+Example Output:
 ```
 $ kubectl config get-contexts
 CURRENT   NAME                 CLUSTER                      AUTHINFO             NAMESPACE
@@ -35,13 +35,13 @@ CURRENT   NAME                 CLUSTER                      AUTHINFO            
 
 Clone this repository and follow anyone of the methods for deployment as listed below
 
-* `To deploy helloworld-python application using public image from garoradevops dockerhub`
+* To deploy helloworld-python application using public image from garoradevops dockerhub
     ```
     $ cd hello-world-k8s-python
     $ sh helloworld_kubernetes.sh -a
     ```
 
-* `To Build your own Image and Push to your own container repository and deploy helloworld-python application on kubernetes`
+* To Build your own Image and Push to your own container repository and deploy helloworld-python application on kubernetes
   ```
   $ cd hello-world-k8s-python
   $ sh helloworld_kubernetes.sh -r "docker-repository-name" -i "image-name" -t "tag-name" -u "login-username" -p  -e
