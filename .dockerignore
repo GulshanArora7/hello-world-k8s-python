@@ -1,5 +1,5 @@
 helloworld_k8s.sh
 Dockerfile
 .dockerignore
-helloworld/
+helloworld-python/
 README.md
