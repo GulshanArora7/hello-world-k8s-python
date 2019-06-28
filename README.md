@@ -50,6 +50,17 @@ Clone this repository and follow anyone of the methods for deployment as listed 
 
   Note: Enter here your docker repository login password
   ```
+  ```
+  If you are using container registry rather then dockerhub then you need to create secrets using below command
+
+  kubectl create secret docker-registry regcred --docker-server=<registery name> --docker-username=<username> --docker-password=<password> --docker-email=<email-address> -n <namespace>
+
+  And add this block in your deployment.yaml in helm chart.
+
+  imagePullSecrets:
+  - name: regcred
+  ```
+
 
 ### To cleanup helloworld-python application
 
