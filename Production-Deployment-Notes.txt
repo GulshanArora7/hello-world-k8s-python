@@ -1,0 +1,19 @@
+To deploy this application on Production below are the recommendations:
+
+1. Please use Ingress for your service rather than LoadBalancer or NorePort.
+2. For production we will need more replica if in case load is high and 3 pods are unable to serve it. So need to use HPA(pod autoscaler) for this.
+3. Recommend to use Managed Kubernetes service provided by Public Cloud service provider AWS,Azure,Google Cloud(of course if are using Public Cloud in our Environment).
+4. Rolling Deployment Strategy can be given in percenteage(%) as well.
+    Example is as below:
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+
+5. Ensure Logs Monitoring setup (ELK) and Kubernetes cluster monitoring using below tools which i feel good.
+   A. ELK STACK (Elasticsearch, Logstash, Kibana)
+   B. Grafana
+   C. Prometheus
+   D. Weave Scope for Kubernetes
+
+6. Implement CI/CD pipeling using tools like Jenkins, GitLab CI and any other according to our need.
