@@ -1,5 +1,7 @@
 # hello-world-k8s-python
 
+Travis-CI: [![Build Status](https://travis-ci.org/GulshanArora7/hello-world-k8s-python.svg?branch=master)](https://travis-ci.org/GulshanArora7/hello-world-k8s-python)
+
 ## Prerequisites
 
 * A Locally running kubernetes cluster(MiniKube) or Running kubernetes cluster in your environment

@@ -4,5 +4,5 @@ python:
   - "3.6"
 
 script:
-  - pip install -r requirement.txt
+  - pip install -r requirements.txt
   - python test_application.py
